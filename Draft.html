@@ -14,16 +14,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="sent.css"> -->
-    <link rel="stylesheet" href="Style.css">
+    
+    
+    
+    <title>Gmail-Clone</title>
 </head>
 <body>
     <!-- Heading Starting Point -->
     <div class="Top-Heading">
         <div class="th-left">
             <span id="menu" onclick="menu()" class="material-icons">menu</span>
-            <img  onclick="refresh()" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="Gmail-Icon">
+            <img onclick="refresh()" src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="Gmail-Icon">
        </div>
        <div class="th-middle">
             <span id="search"  class="material-icons">search</span>
@@ -41,19 +42,19 @@
 
     <!-- Sidebar Starting point -->
         <div class="sidebar ">
-            
-            <button onclick="sidebar()" class="sidebar_compose"><span class="material-icons">add</span>Compose</button>
         
-        <div class="sidebarOptions  " onclick="inbox()">
+            <button onclick="sidebar()" class="sidebar_compose"><span class="material-icons">add</span>Compose</button>
+
+        <div class="sidebarOptions " onclick="inbox()">
             <span class="material-icons">inbox</span> 
             <h3>Inbox</h3>
         </div>
-       
-        <div class="sidebarOptions sidebarOptions_active" onclick="sentMsg()">
+        
+        <div class="sidebarOptions " onclick="sentMsg()">
             <span class="material-icons">send</span> 
             <h3>Sent</h3>
         </div>
-        <div class="sidebarOptions "onclick="draft()">
+        <div class="sidebarOptions sidebarOptions_active">
             <span class="material-icons">drafts</span> 
             <h3>Drafts</h3>
         </div>
@@ -103,22 +104,11 @@
 
     </div>
     <!-- Sidebar Ending Point -->
-        
-            <div class="email_list">
-                <!-- email list row starts -->
-                <div class="emailrow">
-                    <div class="emailrow_options">
-                        <input type="checkbox">
-                        <span class="material-icons">star_border</span>
-                        <span class="material-icons">label_important</span>
-                    </div>
-                    <div class="emailrow_message"></div>
-                </div>
-            </div>
+        <h4 class="draft">No draft ... !</h4>
     </div>
     <!-- Center Content Ending Point -->
-    
-    <script src="./sent.js"></script>
+    </div>
+    <!-- Main Body Ending Point -->
     <script src="Script.js"></script>
 </body>
 </html>

@@ -1,7 +1,11 @@
-function mymenu() {
+function menu() {
     const Menuicon = document.querySelector('.sidebar'); 
     Menuicon.style.display = 
     Menuicon.style.display === "none" ? "block" : "none";
+}
+
+function refresh(){    
+    window.location.href = "Index.html";
 }
 
 function sidebar(){
@@ -26,6 +30,10 @@ function sentMsg(){
     window.location.href = "sent.html";
 }
 
-function refresh(){    
-    window.location.href = "Inbox.html";
+function inbox(){
+    window.location.href = "Inbox.html"
+}
+
+function draft(){
+    window.location.href = "Draft.html"
 }
